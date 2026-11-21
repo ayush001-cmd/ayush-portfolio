@@ -8,27 +8,40 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: #080d1b;
+    background: #0b0b12;
     color: white;
+    line-height: 1.7;
+}
+
+header {
+    background: #151520;
+    padding: 20px 8%;
+    border-bottom: 1px solid #29293b;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 8%;
-    background: #0d1428;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 nav h2 {
     color: #a78bfa;
-    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    flex-wrap: wrap;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin-left: 20px;
+    transition: 0.3s;
 }
 
 nav a:hover {
@@ -42,110 +55,110 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 40px 20px;
-    background: radial-gradient(circle, #25205a, #080d1b 70%);
+    padding: 60px 20px;
 }
 
-.tag {
-    color: #a78bfa;
-    letter-spacing: 4px;
+.profile {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #a78bfa;
     margin-bottom: 25px;
 }
 
 .hero h1 {
-    font-size: 48px;
-    margin-bottom: 15px;
-}
-
-span {
-    color: #a78bfa;
+    font-size: 42px;
+    margin-bottom: 10px;
 }
 
 .hero h3 {
-    color: #c4b5fd;
-    margin-bottom: 20px;
+    color: #a78bfa;
+    font-size: 24px;
 }
 
-.intro {
-    max-width: 550px;
-    line-height: 1.8;
-    color: #cbd5e1;
+.hero p {
+    margin: 15px 0 25px;
+    color: #c4c4d0;
 }
 
 .btn {
-    margin-top: 30px;
-    padding: 14px 28px;
-    background: #7c3aed;
+    display: inline-block;
+    background: #8b5cf6;
     color: white;
-    text-decoration: none;
+    padding: 12px 28px;
     border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
 .btn:hover {
-    background: #a78bfa;
-    color: #080d1b;
+    background: #6d28d9;
+    transform: translateY(-3px);
 }
 
 section:not(.hero) {
     padding: 80px 10%;
     text-align: center;
+    border-top: 1px solid #29293b;
 }
 
 section h2 {
-    font-size: 35px;
+    color: #a78bfa;
+    font-size: 32px;
     margin-bottom: 25px;
 }
 
 section p {
-    color: #cbd5e1;
-    line-height: 1.8;
+    max-width: 750px;
+    margin: 12px auto;
+    color: #d0d0dc;
 }
 
-.info-card {
-    background: #151d35;
-    border: 1px solid #39315f;
-    padding: 30px;
-    border-radius: 15px;
-    max-width: 450px;
-    margin: auto;
+#skills p {
+    background: #171724;
+    border: 1px solid #29293b;
+    padding: 12px;
+    border-radius: 10px;
+    max-width: 350px;
 }
 
-.info-card h3 {
+#goals h3 {
     color: #a78bfa;
-    margin-bottom: 15px;
+    margin-top: 25px;
 }
 
 footer {
+    background: #151520;
     text-align: center;
-    padding: 25px;
-    background: #0d1428;
-    color: #a78bfa;
+    padding: 30px 15px;
+    border-top: 1px solid #29293b;
+    color: #c4c4d0;
+}
+
+footer p {
+    margin: 5px 0;
 }
 
 @media (max-width: 600px) {
     nav {
         flex-direction: column;
-        gap: 20px;
     }
 
-    nav a {
-        margin: 5px;
-        font-size: 13px;
+    nav ul {
+        justify-content: center;
+        gap: 15px;
     }
 
     .hero h1 {
-        font-size: 48px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        line-height: 1.4;
+        font-size: 30px;
     }
-}
-.profile {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid #a78bfa;
-    margin: 0 auto 40px;
-    display: block;
+
+    .hero h3 {
+        font-size: 20px;
+    }
+
+    section:not(.hero) {
+        padding: 55px 7%;
+    }
 }
